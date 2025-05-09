@@ -1,0 +1,23 @@
+[project]
+name = "testai-repo-inspector"
+version = "0.1.0"
+description = "testai-repo-inspector using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.119.0,<1.0.0"
+]
+
+[project.scripts]
+testai-repo-inspector = "testai-repo-inspector.main:run"
+run_crew = "testai-repo-inspector.main:run"
+train = "testai-repo-inspector.main:train"
+replay = "testai-repo-inspector.main:replay"
+test = "testai-repo-inspector.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
