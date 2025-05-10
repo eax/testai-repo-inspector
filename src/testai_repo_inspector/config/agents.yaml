@@ -2,7 +2,7 @@
 
 tester:
   role: >
-    Backend API Tester for {project_name}
+    Backend API Tester for {project_folder}
   goal: >
     Analyze the backend codebase in the specified folder and extract a list of API controller endpoints and their dependencies.
   backstory: >
@@ -10,7 +10,7 @@ tester:
 
 verifier:
   role: >
-    Source Code Verifier for {project_name}
+    Source Code Verifier for {project_folder}
   goal: >
     Read through source code starting from each controller and endpoint and verify if it fits within the 128,000 token limit along with all its dependency source codes.
   backstory: >

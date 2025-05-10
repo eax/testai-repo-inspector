@@ -9,11 +9,11 @@ dependencies = [
 ]
 
 [project.scripts]
-testai-repo-inspector = "testai-repo-inspector.main:run"
-run_crew = "testai-repo-inspector.main:run"
-train = "testai-repo-inspector.main:train"
-replay = "testai-repo-inspector.main:replay"
-test = "testai-repo-inspector.main:test"
+testai-repo-inspector = "testai_repo_inspector.main:run"
+run_crew = "testai_repo_inspector.main:run"
+train = "testai_repo_inspector.main:train"
+replay = "testai_repo_inspector.main:replay"
+test = "testai_repo_inspector.main:test"
 
 [build-system]
 requires = ["hatchling"]
@@ -21,3 +21,6 @@ build-backend = "hatchling.build"
 
 [tool.crewai]
 type = "crew"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/testai_repo_inspector"]

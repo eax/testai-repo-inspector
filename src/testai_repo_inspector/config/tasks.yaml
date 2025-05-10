@@ -1,0 +1,15 @@
+api_testing_task:
+  description: >
+    Analyze the backend codebase in the specified folder and extract a list of API controller endpoints and their source code dependencies.
+    Ensure comprehensive documentation of all available API endpoints.
+  expected_output: >
+    A detailed list of API controller endpoints and their source code dependencies.
+  agent: tester
+
+code_verification_task:
+  description: >
+    Read through source code starting from each controller and endpoint and verify if it fits within the 128,000 token limit along with all its source code dependencies.
+    Ensure the codebase is optimized and fits within the constraints.
+  expected_output: >
+    A verification report detailing whether the code and its source code dependencies fit within the token limit, along with any necessary optimizations.
+  agent: verifier
